@@ -1,1 +1,1 @@
-Data Source=BLUE\SQLEXPRESS;Initial Catalog=VBMoviesFullData;Integrated Security=True
+Data Source=localhost\SQLEXPRESS;Initial Catalog=VBMoviesFullData;Integrated Security=True
