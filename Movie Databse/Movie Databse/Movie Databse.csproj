@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0079CFFD-F298-4E5B-9DB0-390980230942}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Movie_Databse</RootNamespace>
+    <AssemblyName>Movie Databse</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMenuDeep\Add Movie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenuDeep\Add Movie.Designer.cs">
+      <DependentUpon>Add Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenuDeep\Create Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenuDeep\Create Employee.Designer.cs">
+      <DependentUpon>Create Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenuDeep\DeleteCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenuDeep\DeleteCustomer.Designer.cs">
+      <DependentUpon>DeleteCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenuDeep\EditMovieCosts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenuDeep\EditMovieCosts.Designer.cs">
+      <DependentUpon>EditMovieCosts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenuDeep\Elevate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenuDeep\Elevate.Designer.cs">
+      <DependentUpon>Elevate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenuDeep\Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenuDeep\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenuDeep\ShowAllMovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenuDeep\ShowAllMovies.Designer.cs">
+      <DependentUpon>ShowAllMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenuDeep\Update Movie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenuDeep\Update Movie.Designer.cs">
+      <DependentUpon>Update Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMenuDeep\Update_Delete_Movie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenuDeep\Update_Delete_Movie.Designer.cs">
+      <DependentUpon>Update_Delete_Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMenuDeep\DemoteAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMenuDeep\DemoteAdmin.Designer.cs">
+      <DependentUpon>DemoteAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDeep\Add Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDeep\Add Customer.Designer.cs">
+      <DependentUpon>Add Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Menu.Designer.cs">
+      <DependentUpon>Admin Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginInfo.cs" />
+    <Compile Include="Master Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Menu.Designer.cs">
+      <DependentUpon>Master Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDeep\IssueMovies%28Customer%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDeep\IssueMovies%28Customer%29.Designer.cs">
+      <DependentUpon>IssueMovies%28Customer%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDeep\IssueMovies%28Movies%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDeep\IssueMovies%28Movies%29.Designer.cs">
+      <DependentUpon>IssueMovies%28Movies%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDeep\Password Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDeep\Password Input.Designer.cs">
+      <DependentUpon>Password Input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDeep\PasswordInput%28Forced%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDeep\PasswordInput%28Forced%29.Designer.cs">
+      <DependentUpon>PasswordInput%28Forced%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDeep\ReturnMovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDeep\ReturnMovies.Designer.cs">
+      <DependentUpon>ReturnMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDeep\UpdateCustomerSecond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDeep\UpdateCustomerSecond.Designer.cs">
+      <DependentUpon>UpdateCustomerSecond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MenuDeep\UpdateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDeep\UpdateCustomer.Designer.cs">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminMenuDeep\Add Movie.resx">
+      <DependentUpon>Add Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenuDeep\Create Employee.resx">
+      <DependentUpon>Create Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenuDeep\DeleteCustomer.resx">
+      <DependentUpon>DeleteCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenuDeep\EditMovieCosts.resx">
+      <DependentUpon>EditMovieCosts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenuDeep\Elevate.resx">
+      <DependentUpon>Elevate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenuDeep\Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenuDeep\ShowAllMovies.resx">
+      <DependentUpon>ShowAllMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenuDeep\Update Movie.resx">
+      <DependentUpon>Update Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMenuDeep\Update_Delete_Movie.resx">
+      <DependentUpon>Update_Delete_Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMenuDeep\DemoteAdmin.resx">
+      <DependentUpon>DemoteAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDeep\Add Customer.resx">
+      <DependentUpon>Add Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Menu.resx">
+      <DependentUpon>Admin Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Menu.resx">
+      <DependentUpon>Master Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDeep\IssueMovies%28Customer%29.resx">
+      <DependentUpon>IssueMovies%28Customer%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDeep\IssueMovies%28Movies%29.resx">
+      <DependentUpon>IssueMovies%28Movies%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDeep\Password Input.resx">
+      <DependentUpon>Password Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDeep\PasswordInput%28Forced%29.resx">
+      <DependentUpon>PasswordInput%28Forced%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDeep\ReturnMovies.resx">
+      <DependentUpon>ReturnMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDeep\UpdateCustomerSecond.resx">
+      <DependentUpon>UpdateCustomerSecond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="MenuDeep\UpdateCustomer.resx">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blockbusted.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <PropertyGroup>
+    <SsdtUnitTestVersion>2.0</SsdtUnitTestVersion>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,16 @@
+------Employee Rights------
+Create Customer Update Customer
+Rent out Movies + Sell Products
+Return Movies 
+Change Own Password 
+------Admin Rights------
+Change Employee Rights
+Add, Update, Delete Movies
+Add, Update, Delete Products
+Create Employee
+Delete Customer
+Change Own Password
+View Reports
+------Master Rights------
+Change Admin Rights
+Change Own Password

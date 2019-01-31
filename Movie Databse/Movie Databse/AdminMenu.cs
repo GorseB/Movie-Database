@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Movie_Databse
+{
+    public partial class AdminMenu : Form
+    {
+        public AdminMenu()
+        {
+            InitializeComponent();
+            this.Text += "  -  Logged in As : " + LoginInfo.User.ToString();
+        }
+        private void Menu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            LoginInfo.User = null;
+            LoginInfo.Password = null;
+            LoginInfo.Security = null;
+        }
+    }
+}
