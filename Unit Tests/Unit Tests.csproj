@@ -60,7 +60,7 @@
     <Compile Include="TestLogin.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Movie Databse\Movie Databse.csproj">
+    <ProjectReference Include="..\Movie Database.csproj">
       <Project>{0079cffd-f298-4e5b-9db0-390980230942}</Project>
       <Name>Movie Databse</Name>
     </ProjectReference>
